@@ -1,13 +1,13 @@
-# Import sample() function from the random module using the import keyword.
-from random import sample
-# Give the list as static input and store it in a variable.
-gvn_lst = [24, 4, 5, 9, 2, 1]
-# Give the length of the sample as static input and store it in another variable.
-len_sampl = 3
-# Pass the given list, sample length as the arguments to the sample() method
-# to get given length(len_sampl) of random sample items from the list
-# Store it in another variable.
-rslt = sample(gvn_lst, len_sampl)
-# Print the above result.
-print("The", len_sampl, "random items from the given list are:")
-print(rslt)
+def CheckLeap(Year):  
+  # Checking if the given year is leap year  
+  if((Year % 400 == 0) or  
+     (Year % 100 != 0) and  
+     (Year % 4 == 0)):   
+    print("Given Year is a leap Year");  
+  # Else it is not a leap year  
+  else:  
+    print ("Given Year is not a leap Year")  
+# Taking an input year from user  
+Year = int(input("Enter the number: "))  
+# Printing result  
+CheckLeap(Year)  
